@@ -30,8 +30,8 @@ galleryList.addEventListener("click", (e) => {
     `<img src="${e.target.dataset.source}  ">`
   );
   
-  const close = document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") {
+  const close = document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
       instance.close();
       document.removeEventListener(Object, close);
     }
